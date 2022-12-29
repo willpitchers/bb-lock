@@ -64,7 +64,7 @@ then
         zip -gr bb_locker_$(date +'%F').zip ${opt_f}
     fi
 
-    cd ../ && mv bb_lock_tmp/*zip ./ && rm -rf bb_lock_tmp
+    cd ../ && mv bb_lock_tmp/*zip /mnt/c/wsl_backup/ && rm -rf bb_lock_tmp
 
 elif [[ ${opt_i} = true ]]
 # echo powershell one-liner to write tar img. of entire WSL
